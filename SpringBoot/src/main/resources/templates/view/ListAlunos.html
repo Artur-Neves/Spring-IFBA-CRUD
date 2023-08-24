@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spring boot</title>
+	<meta name="author" content="Artur Neves Almeida">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+</head>
+
+<body>
+	<div th:replace="fragmentos/fragmento :: cabecalho"></div>
+	
+	<div class="container" style="margin-top: 20px;">
+		<h3 th:text="${title}"></h3>
+		<hr> 
+		<table class="table table-borderred table-hover">
+		<thead>
+			 <th scope="col">Nome</th>
+			 <th scope="col">Curso</th>
+			 <th scope="col">Matricula</th>
+			 <th scope="col">status</th>
+			 <th scope="col">turno</th>
+			 <th scope="col" colspan="2">Ações</th>
+			 </thead>
+			 <tbody>
+				 <tr scope="row" th:each="aluno : ${alunos}" >
+					 <td th:text="${aluno.nome}"></td>
+					<td th:text="${aluno.curso}"></td>
+					<td th:text="${aluno.matricula}"></td>
+					<td th:text="${aluno.status}"></td>
+					<td th:text="${aluno.turno}"></td>	 
+					<td> <a th:href="@{editar/{id}/{status}(id=${aluno.id}, status=${status})}"><img src="/img/lapis.png"/></a></td>
+					<td> <a th:href="@{excluir/{id}/{status}(id=${aluno.id}, status=${status})}"><img src="/img/lixeira.png"/></a></td> 
+				 </tr>
+			 </tbody>	
+		</table>
+		
+	</div>
+	
+	
+	
+	
+		
+	
+	<script src="script/Main.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

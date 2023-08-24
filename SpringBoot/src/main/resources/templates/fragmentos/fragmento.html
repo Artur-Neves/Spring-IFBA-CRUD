@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spring boot</title>
+	<meta name="author" content="Artur Neves Almeida">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+</head>
+<body>
+	<header th:fragment="cabecalho">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" th:href="@{/index}">
+				<img src="/img/IFBA.png" width="100px" alt="Logo">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMobile">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div id="navMobile" class="navbar-collapse collapse justify-content-end">
+
+
+				<a class="botao-nav nav-item nav-link" th:href="@{/index}"><i class="fas fa-home"></i> Home</a>
+				<a class="botao-nav nav-item nav-link" th:href="@{/inseriraluno}"><i class="fas fa-user-graduate"></i> Cadastrar Aluno</a>
+				<a  class="botao-nav nav-item nav-link" th:href="@{/FiltragemAluno}"><i class="fas fa-search"></i> Encontrar Alunos</a>
+				<form method="post" action="/logout">
+				<button type="submit" class="botao-nav nav-item nav-link btn btn-danger" href="#"><i class="fas fa-times"></i> Sair</a>
+				
+                </form>
+			</div>
+		</nav>
+	</header>
+	<footer th:fragment="rodape">
+		<div class="rodape">
+			<span>Todos os direitos Reservados - 2023 &copy: Artur Neves Almeida</span>
+		</div>
+	</footer>
+	
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
