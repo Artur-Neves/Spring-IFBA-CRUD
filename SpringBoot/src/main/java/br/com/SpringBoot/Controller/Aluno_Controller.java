@@ -31,7 +31,7 @@ public class Aluno_Controller {
  	@GetMapping("/inseriraluno")
 	 public ModelAndView inserirAlunos(Aluno_Model aluno) {
 		 ModelAndView mv = new ModelAndView();
-		 mv.setViewName("view/inseriraluno");
+		 mv.setViewName("view/inserirAluno");
 		 mv.addObject("aluno", new Aluno_Model());
 
 		 return mv;
@@ -62,7 +62,7 @@ public class Aluno_Controller {
 	@GetMapping("/ListAlunos/editar/{id}/{status}")
 	 public ModelAndView editarAlunos (@PathVariable("id") int id ,@PathVariable("status") String status) {
 		 ModelAndView mv = new ModelAndView ();
-		 mv.setViewName("view/EditarAluno");
+		 mv.setViewName("view/editarAluno");
 		 Aluno_Model aluno = alunodao.getById(id);
 		 mv.addObject("alunoeditar", aluno);
 		 mv.addObject("status", status);
