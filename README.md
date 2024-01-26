@@ -1,6 +1,6 @@
 <h1 align="center">Spring-Website-Scholar</h1>
 
-![GitHub Org's stars](https://img.shields.io/github/license/Artur-Neves/Gerenciamento-escolar_java)
+![GitHub Org's stars](https://img.shields.io/github/license/Artur-Neves/Spring-IFBA-CRUD)
 &nbsp;
 ![Badge Finalizado](http://img.shields.io/static/v1?label=STATUS&message=finalizado)
 
