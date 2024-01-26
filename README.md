@@ -13,7 +13,7 @@ O Sistema Spring-Website-Scholar é um site de gerenciamento de alunos em uma in
 - **`Criptografia de Senhas de Usuários`**: No processo de cadastro de um usuário no banco de dados, o sistema utiliza criptografia para proteger as senhas, garantindo a segurança dos dados pessoais.
 <div align="center">
   <h2>Assista o vídeo de demonstração do projeto</h2>
-<a href="https://youtu.be/M5YWqNaxFHM" target="_blank"><img src="https://i9.ytimg.com/vi_webp/M5YWqNaxFHM/mqdefault.webp?v=65b3d301&sqp=CNCkz60G&rs=AOn4CLBGLBuHFHaw9o28h4LuuK2gHvn6gA" alt="Assista ao vídeo" width="500"></a>
+<a href="https://youtu.be/M5YWqNaxFHM" target="_blank"><img src="https://i9.ytimg.com/vi_webp/M5YWqNaxFHM/mqdefault.webp?v=65b3d301&sqp=CMTw0K0G&rs=AOn4CLCuJjWcSlKGMaog3-_0P36P4aD5Qw" alt="Assista ao vídeo" width="500"></a>
   </div>
   <br>
 
